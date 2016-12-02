@@ -22,7 +22,7 @@ module.exports = {
   },
   plugins: [
     HTMLWebpackPluginConfig,
-    new webpack.HotModuleReplacementPlugin(),
+    // new webpack.HotModuleReplacementPlugin(),
   ],
   module: {
     loaders: [
