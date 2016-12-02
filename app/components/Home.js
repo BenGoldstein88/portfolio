@@ -76,8 +76,8 @@ export default class Home extends React.Component {
           }
         })
         break;
-      case 'settings':
-        break;
+      // case 'settings':
+      //   break;
 
       default:
         console.log("Something went wrong with the view")
@@ -90,27 +90,31 @@ export default class Home extends React.Component {
 
     switch(this.state.currentView) {
       case 'home':
-        thingToDisplay = <div> <HomePage /> </div>
+        thingToDisplay = <div style={{marginTop: "52px"}}> <HomePage /> </div>
         break;
       case 'contact':
-        thingToDisplay = <div> <ContactPage /> </div>
+        thingToDisplay = <div style={{marginTop: "52px"}}> <ContactPage /> </div>
         break;      
       case 'projects':
-        thingToDisplay = <div> <ProjectsPage /> </div>
+        thingToDisplay = <div style={{marginTop: "52px"}}> <ProjectsPage /> </div>
         break;
       case 'music':
-        thingToDisplay = <div> <MusicPage /> </div>
+        thingToDisplay = <div style={{marginTop: "52px"}}> <MusicPage /> </div>
         break;
       // case 'settings':
       //   break;
       default:
-        console.log("Something went wrong with the view")
+        thingToDisplay = "Error"
     }
 
     return (
       <div>
-        <NavBarTop currentView={this.state.currentView} topNavStyles={this.state.topNavStyles} onTopNavClick={this.handleTopNavClick}/>
+        <div>
+          <NavBarTop currentView={this.state.currentView} topNavStyles={this.state.topNavStyles} onTopNavClick={this.handleTopNavClick} />
+        </div>
+
         {thingToDisplay}
+
       </div>
     );
   }

@@ -40,7 +40,7 @@ export default class NavBarTop extends React.Component {
       			<button name="music" style={this.props.topNavStyles.music} onClick={this.handleNavButtonClick} className="pt-button pt-minimal">
       			Music
       			</button>
-      			<button name="settings" className="pt-button pt-minimal pt-icon-cog">
+      			<button name="settings" onClick={this.handleNavButtonClick} className="pt-button pt-minimal pt-icon-cog">
       			</button>
       		</div>
 
