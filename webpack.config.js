@@ -11,7 +11,7 @@ module.exports = {
   debug: true,
   devtool: 'source-map',
   entry: [
-    'webpack-dev-server/client?http://localhost:8080', // WebpackDevServer host and port
+    // 'webpack-dev-server/client?http://localhost:8080', // WebpackDevServer host and port
     // 'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
     './app/index.js'
   ],
@@ -21,7 +21,7 @@ module.exports = {
     publicPath: '/public/'
   },
   plugins: [
-    HTMLWebpackPluginConfig,
+    HTMLWebpackPluginConfig
     // new webpack.HotModuleReplacementPlugin(),
   ],
   module: {
