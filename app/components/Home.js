@@ -109,9 +109,9 @@ export default class Home extends React.Component {
 
     return (
       <div>
-        <div>
+
           <NavBarTop currentView={this.state.currentView} topNavStyles={this.state.topNavStyles} onTopNavClick={this.handleTopNavClick} />
-        </div>
+
 
         {thingToDisplay}
 
