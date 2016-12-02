@@ -29054,6 +29054,11 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	exports.routes = [{
+	    from: /^http:\/\/localhost\//,
+	    to: './'
+	}];
+	
 	exports.default = _react2.default.createElement(
 	    _reactRouter.Router,
 	    { history: _reactRouter.hashHistory },
